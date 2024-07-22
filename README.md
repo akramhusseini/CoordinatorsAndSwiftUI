@@ -11,7 +11,8 @@ Transitioning from UIKit to SwiftUI can be both exciting and challenging. This p
 - **Login View**: A basic login view with navigation to the main screen and forgot password screen.
 - **Forgot Password View**: A simple view to simulate the forgot password functionality.
 - **Coordinator Pattern**: Implementation of the Coordinator pattern to handle navigation.
-- **Main View**: A placeholder for the main content of the app after login.
+- **Main View**: The main view of the app after a successful login.
+- **Environment Object Setup**: Proper setup of environment objects to ensure the preview works correctly.
 
 ## Structure
 
@@ -20,7 +21,7 @@ Transitioning from UIKit to SwiftUI can be both exciting and challenging. This p
 - `AuthenticationCoordinator.swift`: Manages the navigation for authentication-related views.
 - `AppCoordinator.swift`: The main coordinator that initializes other coordinators and manages the overall navigation.
 - `MainView.swift`: The main view of the app after a successful login.
-- `SwiftUI_CApp.swift`: The entry point of the SwiftUI application.
+- `CoordinatorsAndSwiftUIApp.swift`: The entry point of the SwiftUI application.
 
 ## Getting Started
 
