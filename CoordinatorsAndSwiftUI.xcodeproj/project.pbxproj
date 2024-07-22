@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		EA9CC5DD2C4E834C00EB947A /* CoordinatorsAndSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9CC5DC2C4E834C00EB947A /* CoordinatorsAndSwiftUIApp.swift */; };
-		EA9CC5DF2C4E834C00EB947A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9CC5DE2C4E834C00EB947A /* ContentView.swift */; };
 		EA9CC5E12C4E834E00EB947A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA9CC5E02C4E834E00EB947A /* Assets.xcassets */; };
 		EA9CC5E42C4E834E00EB947A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA9CC5E32C4E834E00EB947A /* Preview Assets.xcassets */; };
+		EA9CC5EB2C4E86D700EB947A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9CC5EA2C4E86D700EB947A /* LoginView.swift */; };
+		EA9CC5ED2C4E888400EB947A /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9CC5EC2C4E888400EB947A /* ForgotPasswordView.swift */; };
+		EA9CC5F12C4E892200EB947A /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9CC5F02C4E892200EB947A /* AuthenticationCoordinator.swift */; };
+		EA9CC5F32C4E8D1500EB947A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9CC5F22C4E8D1500EB947A /* AppCoordinator.swift */; };
+		EA9CC5F52C4E8D3D00EB947A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9CC5F42C4E8D3D00EB947A /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA9CC5D92C4E834C00EB947A /* CoordinatorsAndSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorsAndSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9CC5DC2C4E834C00EB947A /* CoordinatorsAndSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorsAndSwiftUIApp.swift; sourceTree = "<group>"; };
-		EA9CC5DE2C4E834C00EB947A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA9CC5E02C4E834E00EB947A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA9CC5E32C4E834E00EB947A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA9CC5EA2C4E86D700EB947A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EA9CC5EC2C4E888400EB947A /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		EA9CC5F02C4E892200EB947A /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		EA9CC5F22C4E8D1500EB947A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		EA9CC5F42C4E8D3D00EB947A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		EA9CC5DB2C4E834C00EB947A /* CoordinatorsAndSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				EA9CC5EF2C4E890D00EB947A /* Coordinators */,
 				EA9CC5DC2C4E834C00EB947A /* CoordinatorsAndSwiftUIApp.swift */,
-				EA9CC5DE2C4E834C00EB947A /* ContentView.swift */,
+				EA9CC5EE2C4E890500EB947A /* Views */,
 				EA9CC5E02C4E834E00EB947A /* Assets.xcassets */,
 				EA9CC5E22C4E834E00EB947A /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				EA9CC5E32C4E834E00EB947A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA9CC5EE2C4E890500EB947A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA9CC5EA2C4E86D700EB947A /* LoginView.swift */,
+				EA9CC5EC2C4E888400EB947A /* ForgotPasswordView.swift */,
+				EA9CC5F42C4E8D3D00EB947A /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA9CC5EF2C4E890D00EB947A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				EA9CC5F02C4E892200EB947A /* AuthenticationCoordinator.swift */,
+				EA9CC5F22C4E8D1500EB947A /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA9CC5DF2C4E834C00EB947A /* ContentView.swift in Sources */,
+				EA9CC5F32C4E8D1500EB947A /* AppCoordinator.swift in Sources */,
+				EA9CC5F52C4E8D3D00EB947A /* MainView.swift in Sources */,
+				EA9CC5EB2C4E86D700EB947A /* LoginView.swift in Sources */,
+				EA9CC5F12C4E892200EB947A /* AuthenticationCoordinator.swift in Sources */,
+				EA9CC5ED2C4E888400EB947A /* ForgotPasswordView.swift in Sources */,
 				EA9CC5DD2C4E834C00EB947A /* CoordinatorsAndSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +312,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +342,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
